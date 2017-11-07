@@ -1,0 +1,13 @@
+query ArticleComments($articleId: Int!, $showEmails: Boolean!) {
+  article(articleId: $articleId) {
+    comments:
+      commentId
+      formattedBody
+      timestamp
+      author {
+        name
+        email: @include(if: $showEmails)
+        website: @skip(if: $showEmails)
+      }
+  }
+}
