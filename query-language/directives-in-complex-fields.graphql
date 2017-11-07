@@ -1,0 +1,12 @@
+query ArticleComments($articleId: Int!, $showAuthor: Boolean!) {
+  article(articleId: $articleId) {
+    comments {
+      commendId
+      formattedBody
+      timestamp
+      author @include(if: $showAuthor) {
+        name
+      }
+    }
+  }
+}
