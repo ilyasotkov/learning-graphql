@@ -1,0 +1,9 @@
+query ArticleResponses {
+  post: article(articleId: 42) {
+    responses: comments {
+      responseId: commend
+      formattedBody
+      timestamp
+    }
+  }
+}
