@@ -1,0 +1,10 @@
+# exlamation mark in "Int!" means that the value is required
+query ArticleComments($articleId: Int!) {
+  article(articleId: $articleId) {
+    comments {
+      commentId
+      formattedBody
+      timestamp
+    }
+  }
+}
