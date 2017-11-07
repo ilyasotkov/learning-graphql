@@ -1,0 +1,16 @@
+query TwoArticles {
+  firstArticle: article(articleId: 42) {
+    ...CommentList
+  }
+  secondArticle: article(articleId: 43) {
+    ...CommentList
+  }
+}
+
+fragment CommentList on Article {
+  comments {
+    commentId
+    formattedBody
+    timestamp
+  }
+}
