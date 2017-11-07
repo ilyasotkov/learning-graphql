@@ -1,0 +1,13 @@
+{
+  "article": {
+    "comments": [{
+      "commentId": 1,
+      "formattedBody": "GraphQL is <strong>cool</strong>",
+      "timestamp": "12/12/2015 - 15:15"
+    }, {
+      "commentId": 2,
+      "formattedBody": "What's wrong with <em>REST</em>!",
+      "timestamp": "12/12/2015 - 15:25"
+    }]
+  }
+}

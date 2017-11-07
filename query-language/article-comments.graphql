@@ -1,0 +1,9 @@
+query ArticleComments {
+  article(articleId: 42) {
+    comments: {
+      commentId
+      formattedBody
+      timeStamp
+    }
+  }
+}
