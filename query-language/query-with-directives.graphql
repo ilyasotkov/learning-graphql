@@ -1,6 +1,6 @@
 query ArticleComments($articleId: Int!, $showEmails: Boolean!) {
   article(articleId: $articleId) {
-    comments:
+    comments {
       commentId
       formattedBody
       timestamp
@@ -9,5 +9,6 @@ query ArticleComments($articleId: Int!, $showEmails: Boolean!) {
         email: @include(if: $showEmails)
         website: @skip(if: $showEmails)
       }
+    }
   }
 }
