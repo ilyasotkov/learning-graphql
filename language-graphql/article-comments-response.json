@@ -1,0 +1,13 @@
+{
+  "article": {
+    "comments": [{
+      "commentId": 1,
+      "formattedBody": "Welcome to GraphQL learning area!",
+      "timestamp": "07/11/2017 - 14:42"
+    }, {
+      "commentId": 2,
+      "formattedBody": "REST is evil!",
+      "timestamp": "07/11/2017 - 15:42"
+    }]
+  }
+}
